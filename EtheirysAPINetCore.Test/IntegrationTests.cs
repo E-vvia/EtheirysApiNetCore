@@ -1,8 +1,5 @@
-using EtheirysAPINetCore.Exceptions;
 using EtheirysAPINetCore.Model;
 using EtheirysAPINetCore.Model.ClassJobs;
-using EtheirysAPINetCore.Model.Duty;
-using EtheirysAPINetCore.Model.Items;
 using EtheirysAPINetCore.Parameters;
 
 namespace EtheirysAPINetCore.Test
