@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>EtheirysAPI .NET</Title>
+    <Authors>Zeta</Authors>
+    <Description>A simple .NET library for EtheirysAPI</Description>
+    <Copyright>Zeta 2024</Copyright>
+  </PropertyGroup>
+
+</Project>
