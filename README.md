@@ -1,5 +1,5 @@
 # EtheirysApiNetCore
-
+[![.NET](https://github.com/E-vvia/EtheirysApiNetCore/actions/workflows/dotnet.yml/badge.svg)](https://github.com/E-vvia/EtheirysApiNetCore/actions/workflows/dotnet.yml)
 A simple .NET wrapper to interact with [EtheirysApi](https://etheirysapi.com).
 
 ## Usage
