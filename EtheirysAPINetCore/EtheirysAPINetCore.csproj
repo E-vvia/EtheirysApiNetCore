@@ -9,6 +9,17 @@
     <Authors>Zeta</Authors>
     <Description>A simple .NET library for EtheirysAPI</Description>
     <Copyright>Zeta 2024</Copyright>
+    <PackageProjectUrl>https://github.com/E-vvia/EtheirysApiNetCore</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/E-vvia/EtheirysApiNetCore</RepositoryUrl>
+    <PackageTags>ffxiv;etheirysapi;etheirys;final fantasy;xiv;</PackageTags>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
