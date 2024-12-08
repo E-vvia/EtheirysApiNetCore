@@ -13,6 +13,8 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/E-vvia/EtheirysApiNetCore</RepositoryUrl>
     <PackageTags>ffxiv;etheirysapi;etheirys;final fantasy;xiv;</PackageTags>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <SignAssembly>False</SignAssembly>
   </PropertyGroup>
 
   <ItemGroup>
