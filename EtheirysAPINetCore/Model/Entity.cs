@@ -2,7 +2,7 @@
 
 namespace EtheirysAPINetCore.Model
 {
-    public abstract record Entity
+    public abstract class Entity
     {
         public int Id { get; set; }
     }

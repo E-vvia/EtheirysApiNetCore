@@ -3,7 +3,7 @@
 namespace EtheirysAPINetCore.Model.Items
 {
     [Endpoint("medicinesmeals")]
-    public record MedicineMeal : Item
+    public class MedicineMeal : Item
     {
         public bool CanBeHq { get; set; }
         public int ItemLevel { get; set; }

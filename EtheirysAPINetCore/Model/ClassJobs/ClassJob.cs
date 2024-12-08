@@ -4,7 +4,7 @@ using EtheirysAPINetCore.Model.Localization;
 namespace EtheirysAPINetCore.Model.ClassJobs
 {
     [Endpoint("classjobs")]
-    public record ClassJob : Entity
+    public class ClassJob : Entity
     {
         public LocalizedString Name { get; set; } = null!;
         public LocalizedString Abbreviation { get; set; } = null!;

@@ -1,4 +1,7 @@
-﻿namespace EtheirysAPINetCore.Model
+﻿using System.Collections.Generic;
+using System.Linq;
+
+namespace EtheirysAPINetCore.Model
 {
     public class Paginated<T> where T : Entity
     {
@@ -6,6 +9,6 @@
         public int TotalPages { get; set; }
         public int PerPage { get; set; }
         public int Total { get; set; }
-        public IEnumerable<T> Data { get; set; } = [];
+        public IEnumerable<T> Data { get; set; } = Enumerable.Empty<T>();
     }
 }

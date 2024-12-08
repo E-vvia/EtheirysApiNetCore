@@ -4,10 +4,10 @@ using EtheirysAPINetCore.Model.Localization;
 namespace EtheirysAPINetCore.Model.Items
 {
     [Endpoint("BaseParams")]
-    public record BaseParam : Entity
+    public class BaseParam : Entity
     {
-        public LocalizedString Name { get; set; } = new();
-        public LocalizedString Description { get; set; } = new();
+        public LocalizedString Name { get; set; } = new LocalizedString();
+        public LocalizedString Description { get; set; } = new LocalizedString();
         public int OneHandWeaponPercent { get; set; }
         public int OffHandPercent { get; set; }
         public int HeadPercent { get; set; }

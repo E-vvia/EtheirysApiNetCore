@@ -3,7 +3,7 @@
 namespace EtheirysAPINetCore.Model.Items
 {
     [Endpoint("others")]
-    public record Other : Item
+    public class Other : Item
     {
         public int ItemLevel { get; set; }
         public int VendorValue { get; set; }

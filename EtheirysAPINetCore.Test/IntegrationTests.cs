@@ -23,7 +23,16 @@ namespace EtheirysAPINetCore.Test
         {
             Assert.NotEqual(default, await DoPaginatedRequest(new ClassJobRequest()
             {
-                Abbreviation = "WAR"
+                Abbreviation = "WAR",
+            }));
+        }
+
+        [Fact]
+        public async Task GetRequestWithArray()
+        {
+            Assert.NotEqual(default, await DoPaginatedRequest(new ItemRequest()
+            {
+                Type = [ItemRequest.ItemTypes.Gear, ItemRequest.ItemTypes.MedicineMeal]
             }));
         }
 

@@ -1,6 +1,6 @@
 ﻿namespace EtheirysAPINetCore.Model.Localization
 {
-    public record LocalizedString
+    public class LocalizedString
     {
         public string EN { get; set; } = string.Empty;
         public string FR { get; set; } = string.Empty;

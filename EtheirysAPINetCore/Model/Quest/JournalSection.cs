@@ -4,8 +4,8 @@ using EtheirysAPINetCore.Model.Localization;
 namespace EtheirysAPINetCore.Model.Quest
 {
     [Endpoint("journalsections")]
-    public record JournalSection : Entity
+    public class JournalSection : Entity
     {
-        public LocalizedString Name { get; set; } = new();
+        public LocalizedString Name { get; set; } = new LocalizedString();
     }
 }

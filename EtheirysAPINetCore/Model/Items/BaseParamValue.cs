@@ -2,7 +2,7 @@
 
 namespace EtheirysAPINetCore.Model.Items
 {
-    public record BaseParamValue
+    public class BaseParamValue
     {
         public int Id { get; set; }
         public LocalizedString Name { get; set; } = new LocalizedString();

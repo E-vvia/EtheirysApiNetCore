@@ -2,16 +2,20 @@
 using EtheirysAPINetCore.Exceptions;
 using EtheirysAPINetCore.Model;
 using EtheirysAPINetCore.Parameters;
+using System;
+using System.IO;
+using System.Net.Http;
 using System.Reflection;
 using System.Text.Json;
+using System.Threading.Tasks;
 
 namespace EtheirysAPINetCore
 {
     public class EtheirysApiClient : IDisposable
     {
-        private readonly Uri API_ENDPOINT = new("https://etheirysapi.com/api/");
+        private readonly Uri API_ENDPOINT = new Uri("https://etheirysapi.com/api/");
         private readonly HttpClient httpClient;
-        private readonly JsonSerializerOptions serializerOptions = new()
+        private readonly JsonSerializerOptions serializerOptions = new JsonSerializerOptions()
         {
             PropertyNameCaseInsensitive = true
         };

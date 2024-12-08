@@ -4,7 +4,7 @@ using EtheirysAPINetCore.Model.Localization;
 namespace EtheirysAPINetCore.Model.Duty
 {
     [Endpoint("duties")]
-    public record Duty : Entity
+    public class Duty : Entity
     {
         public LocalizedString Name { get; set; } = null!;
         public LocalizedString Description { get; set; } = null!;

@@ -4,7 +4,7 @@ using EtheirysAPINetCore.Model.Localization;
 namespace EtheirysAPINetCore.Model.Items
 {
     [Endpoint("items")]
-    public record Item : Entity
+    public class Item : Entity
     {
         public string Type { get; set; } = string.Empty;
         public ItemCategory Category { get; set; } = new ItemCategory();

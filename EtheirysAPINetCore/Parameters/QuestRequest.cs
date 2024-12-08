@@ -1,4 +1,7 @@
 ﻿using EtheirysAPINetCore.Model.Quest;
+using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace EtheirysAPINetCore.Parameters
 {
@@ -6,7 +9,7 @@ namespace EtheirysAPINetCore.Parameters
     {
         public LanguageQuery Language { get; set; } = LanguageQuery.EN;
         public string? Name { get; set; }
-        public string[] PlayableBy { get; set; } = [];
+        public string[] PlayableBy { get; set; } = Array.Empty<string>();
         public string? UnlocksClassJob { get; set; }
         public string? JournalGenre { get; set; }
         public string? JournalCategory { get; set; }

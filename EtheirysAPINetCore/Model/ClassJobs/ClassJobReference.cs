@@ -2,7 +2,7 @@
 
 namespace EtheirysAPINetCore.Model.ClassJobs
 {
-    public record ClassJobReference
+    public class ClassJobReference
     {
         public int Id { get; set; }
         public LocalizedString Name { get; set; } = null!;

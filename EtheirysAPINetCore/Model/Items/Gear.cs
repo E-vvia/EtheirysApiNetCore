@@ -1,10 +1,12 @@
 ﻿using EtheirysAPINetCore.Endpoints;
 using EtheirysAPINetCore.Model.ClassJobs;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace EtheirysAPINetCore.Model.Items
 {
     [Endpoint("Gear")]
-    public record Gear : Item
+    public class Gear : Item
     {
         public EquipSlot? EquipSlot { get; set; }
         public int ItemLevel { get; set; }
@@ -28,9 +30,9 @@ namespace EtheirysAPINetCore.Model.Items
         public int MateriaSlotCount { get; set; }
         public int Desynth { get; set; }
         public Item? RepairItem { get; set; }
-        public IEnumerable<BaseParamValue> BaseParamValues { get; set; } = [];
-        public IEnumerable<BaseParamValue> BaseParamValuesSpecial { get; set; } = [];
-        public IEnumerable<ClassJobReference> UsedBy { get; set; } = [];
-        public ClassJobReference RepairedBy { get; set; } = new();
+        public IEnumerable<BaseParamValue> BaseParamValues { get; set; } = Enumerable.Empty<BaseParamValue>();
+        public IEnumerable<BaseParamValue> BaseParamValuesSpecial { get; set; } = Enumerable.Empty<BaseParamValue>();
+        public IEnumerable<ClassJobReference> UsedBy { get; set; } = Enumerable.Empty<ClassJobReference>();
+        public ClassJobReference RepairedBy { get; set; } = new ClassJobReference();
     }
 }

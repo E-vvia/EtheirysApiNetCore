@@ -1,4 +1,7 @@
 ﻿using EtheirysAPINetCore.Model.Items;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace EtheirysAPINetCore.Parameters
 {
@@ -23,10 +26,9 @@ namespace EtheirysAPINetCore.Parameters
             SoulCrystal
         }
 
-        public EquipSlots[] CanEquip { get; set; } = [];
-
+        public EquipSlots[] CanEquip { get; set; } = Array.Empty<EquipSlots>();
         public LanguageQuery Language { get; set; } = LanguageQuery.EN;
-        public string[] UsedBy { get; set; } = [];
+        public string[] UsedBy { get; set; } = Array.Empty<string>();
         public string? RepairedBy { get; set; }
         public int? Rarity { get; set; }
         public string? Name { get; set; }

@@ -3,7 +3,7 @@
 namespace EtheirysAPINetCore.Model.Items
 {
     [Endpoint("EquipSlots")]
-    public record EquipSlot : Entity
+    public class EquipSlot : Entity
     {
         public int MainHand { get; set; }
         public int OffHand { get; set; }
